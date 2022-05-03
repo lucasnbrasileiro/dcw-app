@@ -15,8 +15,8 @@ spec:
         app.kubernetes.io/name: app-eks-demo
     spec:
       containers:
-      - image: CONTAINER_IMAGE
+      - image: 815379600141.dkr.ecr.us-east-1.amazonaws.com
         imagePullPolicy: Always
         name: app-eks-demo
         ports:
-        - containerPort: 80
+        - containerPort: 3000
