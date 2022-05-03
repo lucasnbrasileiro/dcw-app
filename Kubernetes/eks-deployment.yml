@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   namespace: default
-  name: dcw-app-novo
+  name: dcw-app
 spec:
   selector:
     matchLabels:
