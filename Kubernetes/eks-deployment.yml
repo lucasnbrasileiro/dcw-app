@@ -7,16 +7,16 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app.kubernetes.io/name: app-eks-demo
+      app.kubernetes.io/name: dcw-app-novo
   replicas: 2
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: app-eks-demo
+        app.kubernetes.io/name: dcw-app-novo
     spec:
       containers:
       - image: 815379600141.dkr.ecr.us-east-1.amazonaws.com/dcw-app-novo
         imagePullPolicy: Always
-        name: app-eks-demo
+        name: dcw-app-novo
         ports:
         - containerPort: 3000
