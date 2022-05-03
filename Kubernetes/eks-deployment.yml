@@ -2,8 +2,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: eks-demo-2
-  name: deployment-eks-demo
+  namespace: default
+  name: dcw-app
 spec:
   selector:
     matchLabels:
@@ -15,7 +15,7 @@ spec:
         app.kubernetes.io/name: app-eks-demo
     spec:
       containers:
-      - image: 815379600141.dkr.ecr.us-east-1.amazonaws.com
+      - image: 815379600141.dkr.ecr.us-east-1.amazonaws.com/dcw-app
         imagePullPolicy: Always
         name: app-eks-demo
         ports:
