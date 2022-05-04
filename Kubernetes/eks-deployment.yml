@@ -1,6 +1,6 @@
 ---
 apiVersion: apps/v1
-kind: Deployment
+kind: deployment
 metadata:
   namespace: default
   name: dcw-app
@@ -19,4 +19,4 @@ spec:
         imagePullPolicy: Always
         name: app-eks-demo
         ports:
-        - containerPort: 80
+        - containerPort: 3000
