@@ -1,6 +1,6 @@
 ---
 apiVersion: apps/v1
-kind: deployment
+kind: Deployment
 metadata:
   namespace: default
   name: dcw-app
